@@ -1,0 +1,34 @@
+{
+  "tests": [
+    {
+      "name": "Pruebas Cola",
+      "setup": "./build.sh",
+      "run": "./test_cola.sh",
+      "input": null,
+      "output": null,
+      "comparison": "exact",
+      "timeout": 5,
+      "points": 5
+    },
+    {
+      "name": "Pruebas Lista Circular",
+      "setup": "./build.sh",
+      "run": "./test_lista_circular.sh",
+      "input": null,
+      "output": null,
+      "comparison": "exact",
+      "timeout": 5,
+      "points": 15
+    },
+    {
+      "name": "Chequeo de Memoria",
+      "setup": "sudo apt-get update && sudo apt-get install -y valgrind && ./build.sh",
+      "run": "./valgrind.sh",
+      "input": null,
+      "output": null,
+      "comparison": "exact",
+      "timeout": 5,
+      "points": 5
+    }
+  ]
+}

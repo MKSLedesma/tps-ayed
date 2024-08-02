@@ -1,0 +1,24 @@
+{
+  "tests": [
+    {
+      "name": "Compilado y Pruebas",
+      "setup": "./build.sh",
+      "run": "./test.sh",
+      "input": null,
+      "output": null,
+      "comparison": "exact",
+      "timeout": 5,
+      "points": 8
+    },
+    {
+      "name": "Chequeo de Memoria",
+      "setup": "sudo apt-get install -y valgrind && ./build.sh",
+      "run": "./valgrind.sh",
+      "input": null,
+      "output": null,
+      "comparison": "exact",
+      "timeout": 5,
+      "points": 2
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "tests": [
+    {
+      "name": "Pruebas Diccionario",
+      "setup": "./build.sh",
+      "run": "./test_diccionario.sh",
+      "input": null,
+      "output": null,
+      "comparison": "exact",
+      "timeout": 5,
+      "points": 20
+    },
+    {
+      "name": "Pruebas Heap",
+      "setup": "./build.sh",
+      "run": "./test_heap.sh",
+      "input": null,
+      "output": null,
+      "comparison": "exact",
+      "timeout": 5,
+      "points": 10
+    },
+    {
+      "name": "Pruebas Grafo",
+      "setup": "./build.sh",
+      "run": "./test_grafo.sh",
+      "input": null,
+      "output": null,
+      "comparison": "exact",
+      "timeout": 5,
+      "points": 5
+    },
+    {
+      "name": "Chequeo de Memoria",
+      "setup": "sudo apt-get update && sudo apt-get install -y valgrind && ./build.sh",
+      "run": "./valgrind.sh",
+      "input": null,
+      "output": null,
+      "comparison": "exact",
+      "timeout": 5,
+      "points": 5
+    }
+  ]
+}
